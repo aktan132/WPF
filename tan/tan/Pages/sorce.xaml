@@ -1,0 +1,38 @@
+﻿<Window x:Class="tan.Pages.sorce"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tan.Pages"
+        mc:Ignorable="d"
+           WindowStyle="None"
+         
+         WindowStartupLocation="CenterScreen"
+  
+        AllowsTransparency="True"
+        Title="sorce" Height="324" Width="200">
+    
+    <Border MouseDown="Drag" BorderBrush="Green" BorderThickness="3"
+                CornerRadius="0" Margin="0,0,0,3">
+        <Grid Margin="0,0,0,30">
+        <StackPanel Margin="0,45,0,-34"   >
+
+                <Label FontSize="15" Style="{StaticResource TitleText1}"   Name="log"  ></Label>
+                <Label  FontSize="15" Style="{StaticResource TitleText1}" Name="pas"  ></Label>
+                <TextBlock Name="test1"  Style="{StaticResource TitleText}" FontSize="15"  Text="Тест 1"></TextBlock>
+                <Label FontSize="15" Style="{StaticResource TitleText1}"  Name="losa"  ></Label>
+                <TextBlock Name="test2" Style="{StaticResource TitleText}" FontSize="15"  Text="Тест 2"></TextBlock>
+                <Label Style="{StaticResource TitleText1}" FontSize="15"   Name="losa1"  ></Label>
+                <TextBlock Name="test3" Style="{StaticResource TitleText}" FontSize="15"   Text="Тест 3"></TextBlock>
+                <Label Style="{StaticResource TitleText1}" FontSize="15"   Name="losa2"  ></Label>
+                <Button Content="Сохранить" Click="sohr" Margin="9" Height="27" Width="110">
+                </Button>
+            </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
+
+            <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+        </StackPanel>
+    </Grid>
+    </Border>
+</Window>

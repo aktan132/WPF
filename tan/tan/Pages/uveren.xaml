@@ -1,0 +1,32 @@
+﻿<Page x:Class="tan.Pages.uveren"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tan.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="450"
+      Title="uveren">
+    <Border BorderBrush="Green" BorderThickness="3"
+                CornerRadius="5" Width="450" Height="450"  >
+        <Grid Background="White" >
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="428" Height="190">
+                <TextBlock  FontSize="25" 
+VerticalAlignment="Top" Cursor="AppStarting"  TextWrapping="Wrap" >Прежде чем посмотреть решение просьба попытаться решить самому!</TextBlock>
+                <TextBlock Margin="15" FontSize="25"  HorizontalAlignment="Center"  >Открыть решение?</TextBlock>
+            </StackPanel>
+
+            <StackPanel  HorizontalAlignment="Center" Orientation="Horizontal" Width="450" Margin="0,236,0,69"    >
+
+                <Button  Click="Button_Click" Height="50" Width="150" Margin="50,0,050,0" >ДА</Button>
+                <Button  Click="Button_Click1"  Height="50"   Width="150" >Нет</Button>
+
+            </StackPanel>
+
+            <Frame x:Name="MainFrame1"
+               NavigationUIVisibility="Hidden"/>
+
+        </Grid>
+    </Border>
+</Page>

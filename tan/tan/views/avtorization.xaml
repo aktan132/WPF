@@ -1,0 +1,38 @@
+﻿<Page x:Class="tan.views.avtorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tan.views"
+      mc:Ignorable="d" 
+      d:Height="322" Width="380"
+      Title="avtorization">
+
+    <Grid Background="White">
+        <Border  Background="GhostWhite"  BorderThickness="1" CornerRadius="12,11,12,12" Margin="60,53,61,53">
+            <StackPanel VerticalAlignment="Center"
+HorizontalAlignment="Center"
+MinWidth="200">
+
+                <TextBlock FontWeight="Medium"   Text="Логин"/>
+                <TextBox  BorderBrush="MediumSeaGreen"  Foreground="Green" x:Name="LoginTxb"/>
+                <TextBlock FontWeight="Medium" Text="Пароль"/>
+                <TextBox BorderBrush="MediumSeaGreen" Foreground="Green" x:Name="Password_Txb"/>
+
+                <Button  Margin="10"  BorderBrush="Green" Content="Coхранить"
+Click="Save_Btn_click431" Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Margin="138,256,138,4">
+            <TextBox BorderBrush="MediumSeaGreen" FontWeight="Medium" FontSize="10" Text="Уже есть аккаунт?" Width="88"  />
+            <Button  Click="Button_Click_vhod" Margin="9" Content="Вход" Height="27" Width="68"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="344,2,1,298">
+            <Button Style="{DynamicResource ButtonStyle_Close}" BorderBrush="Green" Background="white"  Foreground="Green" 
+                 Click="Button_Click13" Margin="1,1,1,1" Height="18" Width="15" RenderTransformOrigin="0,0.2" FontSize="12" >━</Button>
+            <Button Style="{DynamicResource ButtonStyle_Close}" BorderBrush="Green" Background="white" FontSize="11" Foreground="Green" 
+                 Click="Button_Click14" Height="18" Width="15" Content="Х"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
